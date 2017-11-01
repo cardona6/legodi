@@ -20,7 +20,7 @@ router.get('/categories', function (req, res, next) {
 router.get('/articles', function (req, res, next) {
   const callback = (error, article) => {
      res.render("admin-list-articles",{
-      article
+      articles
      }) 
     }
     articleClient.listArticles(callback);
