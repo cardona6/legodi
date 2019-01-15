@@ -7,8 +7,13 @@ const CategorySchema = new Schema({
         type: String,
     }, 
     titleTranslation:{
+        es: { type: String, default: 'españoltranslation' },
         ar:{type:String,default:'amharic translation'},
         am: { type: String, default: 'arabic translation' },
+    },
+    españolDescription: {
+        type: String,
+        default: 'español translation'
     },
     arabicDescription: {
         type: String,

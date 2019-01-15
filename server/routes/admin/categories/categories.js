@@ -25,6 +25,7 @@ router.post('/add', (req, res, next) => {
     const query = req.body;
     const titleTranslation = {};
 
+    titleTranslation.es = query.es;
     titleTranslation.am = query.am;
     titleTranslation.ar = query.ar;
 
@@ -78,8 +79,9 @@ router.post('/edit/:categoryId', (req, res, next) => {
 
      const titleTranslation = {};
 
-    titleTranslation.am = query.am;
-    titleTranslation.ar = query.ar;
+     titleTranslation.es = query.es;
+     titleTranslation.am = query.am;
+     titleTranslation.ar = query.ar;
 
     query.titleTranslation = titleTranslation;
 

@@ -7,4 +7,4 @@ showButton.addEventListener('click', () => {
   } else {
     transition.style.display = "none";
   }
-})
+})  

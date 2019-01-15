@@ -37,6 +37,13 @@ class SingleCategory extends Component {
                     })
                 } else {
                     const { category = {} } = data[0];
+                    if (language === 'es') {
+                        this.setState({
+                            articles: data,
+                            categoryTitle: category.titleTranslation[language],
+                            categoryDesc: category.españolDescription,
+                            lang: data[0].language
+                        })
                     if (language === 'ar') {
                         this.setState({
                             articles: data,
@@ -58,6 +65,7 @@ class SingleCategory extends Component {
                         })
                     }
                 }
+              }
             })
     }
 
